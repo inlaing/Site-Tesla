@@ -59,6 +59,9 @@ body{
     float: left;
     margin-left:8%;
 }
+.logo>img{
+    width: 180px;
+}
 header{
     background: #000;
     width: 100%;
@@ -164,28 +167,28 @@ nav ul li>a:hover{
     animation-name:spin;
     animation-duration:3s;
 }
-h3{
-    font-size: 30px;
-    margin-top:40px;
-}
 .left-block{
     float: left;
     width:43%;
     margin-left: 5%;
     font-family: Helvetica Light;
 }
+h3{
+    font-size: 30px;
+    margin-top:40px;
+}
 .left-block>h3{
     margin:20px;
     margin-top:65px;
-}
-.italic{
-    font-style: italic;
-    font-size: 22px;
 }
 .text{
     margin: 10px;
     line-height: 120%;
     font-size: 17px;
+}
+.italic{
+    font-style: italic;
+    font-size: 22px;
 }
 .right-block{
     float: right;
@@ -280,6 +283,9 @@ footer li:hover{
 
 /*////////////////////////////madia queries////////////////////////*/
 @media screen and (max-width: 479px){
+    .logo>img{
+        width: 80px;
+    }
     .top>h1 {
         font-size: 100%;
     }
@@ -330,12 +336,19 @@ footer li:hover{
     .text2{
         margin-left: 5%;
     }
+    footer{
+        height: auto;
+        margin-top: -31px;
+    }
     .footer-block{
         margin-left: 5%;
         float: none;
     }
 }
 @media screen and (min-width: 480px) and (max-width: 768px){
+    .logo>img{
+        width: 120px;
+    }
     .top>h1 {
         font-size: 170%;
     }
@@ -386,12 +399,19 @@ footer li:hover{
     .text2{
         margin-left: 5%;
     }
+    footer{
+        height: auto;
+        margin-top: -31px;
+    }
     .footer-block{
         margin-left: 5%;
         float: none;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 980px){
+    .logo>img{
+        width: 140px;
+    }
     #switcher{
         display: none;
     }
