@@ -192,7 +192,7 @@ h3{
 }
 .right-block{
     float: right;
-    width:43%;
+    width:50%;
     font-family: Helvetica Light;
     background-color: #1b1b1b;
     margin-top:-4px;
@@ -285,6 +285,7 @@ footer li:hover{
 @media screen and (max-width: 479px){
     .logo>img{
         width: 80px;
+        position: relative;
     }
     .top>h1 {
         font-size: 100%;
@@ -301,6 +302,15 @@ footer li:hover{
     }
     #main-menu > ul {
         display: none;
+        height: 20px;
+        position: absolute;
+        right: 95px;
+        top: -15px;
+    }
+     #main-menu>ul>li>a{
+        position: absolute;
+        z-index: 10000;
+        margin-top: 10px;
     }
     #main-menu input[type=checkbox]:checked ~ ul {
         display: block;
@@ -308,6 +318,8 @@ footer li:hover{
     #main-menu li {
         display: block;
         margin-top: 3px;
+        height: 10px;
+        font-size: 10px;
     }
     #main-menu li.has-sub ul {
         position: static;
@@ -323,31 +335,60 @@ footer li:hover{
         float: none;
         width: 90%;
     }
+    .left-block>h3 {
+        margin-top: 20px;
+        font-size: 23px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .italic{
+        font-size: 17px;
+    }
     .right-block{
         float: none;
         width: 100%;
+        padding-top: 1px;
     }
     .right-block>h3{
         margin-left: 5%;
+        margin-top: 20px;
+        font-size: 23px;
     }
     .right-block>hr{
         margin-left: 5%;
     }
     .text2{
         margin-left: 5%;
+        font-size: 12px;
+        padding-bottom: 10px;
     }
     footer{
         height: auto;
         margin-top: -31px;
+        font-size: 12px;
     }
     .footer-block{
         margin-left: 5%;
-        float: none;
+        width: 41%;
+        height: 80px;
+    }
+    .footer-block>hr{
+        width: 120px;   
+    }
+    footer:after{
+        display: block;
+        content: ".";
+        font-size: 0;
+        width: 100%;
+        height: 1px;
+        clear: both;
     }
 }
 @media screen and (min-width: 480px) and (max-width: 768px){
     .logo>img{
         width: 120px;
+        position: relative;
     }
     .top>h1 {
         font-size: 170%;
@@ -364,6 +405,10 @@ footer li:hover{
     }
     #main-menu > ul {
         display: none;
+        height: 20px;
+        position: absolute;
+        right: 95px;
+        top: -20px;
     }
     #main-menu input[type=checkbox]:checked ~ ul {
         display: block;
@@ -371,6 +416,12 @@ footer li:hover{
     #main-menu li {
         display: block;
         margin-top: 3px;
+        height: 20px;
+    }
+    #main-menu>ul>li>a{
+        position: absolute;
+        z-index: 10000;
+        margin-top: 10px;
     }
     #main-menu li.has-sub ul {
         position: static;
@@ -382,30 +433,55 @@ footer li:hover{
     #main-menu li.has-sub > a:hover ~ ul {
         height: auto;
     }
+    .left-block>h3{
+        margin-top: 20px;
+        font-size: 26px;
+    }
     .left-block{
         float: none;
         width: 90%
     }
+    .text{
+        font-size: 15px;
+    }
+    .italic{
+        font-size: 20px;
+    }
     .right-block{
         float: none;
         width: 100%;
+        padding-top: 1px;
     }
     .right-block>h3{
         margin-left: 5%;
+        margin-top: 20px;
+        font-size: 26px;
     }
     .right-block>hr{
         margin-left: 5%;
     }
     .text2{
         margin-left: 5%;
+        font-size: 15px;
+        padding-bottom: 10px;
     }
     footer{
         height: auto;
         margin-top: -31px;
+        font-size: 14px;
     }
     .footer-block{
         margin-left: 5%;
-        float: none;
+        width: 45%;
+        height: 90px;
+    }
+    footer:after{
+        display: block;
+        content: ".";
+        font-size: 0;
+        width: 100%;
+        height: 1px;
+        clear: both;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 980px){
@@ -428,12 +504,17 @@ footer li:hover{
         float: none;
         width: 90%;
     }
+    .left-block>h3{
+        margin-top: 20px;
+    }
     .right-block{
         float: none;
         width: 100%;
+        padding-top: 1px;
     }
     .right-block>h3{
         margin-left: 5%;
+        margin-top: 20px;
     }
     .right-block>hr{
         margin-left: 5%;
@@ -446,6 +527,10 @@ footer li:hover{
     }
     .footer-block{
        margin-left: 5%;
+       width: 20%;
+    }
+    .footer-block>hr{
+        width: 130px;
     }
 }
 @media screen and (min-width: 981px){
